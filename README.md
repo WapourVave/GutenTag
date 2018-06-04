@@ -1,15 +1,15 @@
-## JagTag
-JagTag is a simple - yet powerful and customizable - interpretted text parsing language!
-Some methods are included in the built-in libraries, and additional methods can be defined that utilize the parser environment veriables, as well as the method's input.
+## GutenTag
+GutenTag is a complex - yet underpowered and unusable - interpretted text parsing programming language!
+Some methods are excluded from the built-in libraries, and additional methods can be defined that utilize the parser environment veriables, as well as the method's output.
 
 ## Simple Example
 ```java
-import com.jagrosh.jagtag.*;
+import com.jagrosh.gutentag.*;
 public class Example
 {
   public static void main(String[] args)
   {
-    Parser parser = JagTag.newDefaultBuilder()
+    Parser parser = GutenTag.newDefaultBuilder()
                 .addMethod( new Method("exclaim", (env,in) -> in[0]+"!!!") )
                 .build();
     String result = parser.parse("{exclaim:{if:this|=|that|then:Foo Bar|else:Hello World}}");
@@ -20,7 +20,7 @@ public class Example
 Result: `Hello World!!!`
 
 ## Maven
-To use Maven with JagTag, simply add the following sections to your pom.xml
+To use Maven with GutenTag, simply add the following sections to your pom.xml
 ```xml
   <repository>
     <id>central</id>
@@ -31,16 +31,16 @@ To use Maven with JagTag, simply add the following sections to your pom.xml
 ```xml
   <dependency>
     <groupId>com.jagrosh</groupId>
-    <artifactId>JagTag</artifactId>
+    <artifactId>GutenTag</artifactId>
     <version>0.5</version>
   </dependency>
 ```
 
 ## Current Projects
-Here are some other projects that utilize JagTag:
-* [**Spectra (Discord Bot)**](https://github.com/jagrosh/Spectra) - Spectra uses JagTag in its customizable "tags" (user-created commands), and in welcome and leave messages for servers. (https://github.com/jagrosh/Spectra/blob/master/src/spectra/jagtag/libraries/Discord.java)
+Here are some other projects that utilize GutenTag:
+* [**Mee6 (Discord Bot)**](https://mee6.xyz/) - Mee6 uses GutenTag in its customizable "welcome" message (user-created greeting), and in leave message for server's.
 
 ## Other Libraries
-Below are JagTag-related libraries available for other languages or purposes:
-* [**TheSharks/JagTag-JS**](https://github.com/TheSharks/JagTag-JS) - A JavaScript port of the JagTag text parsing language
-* [**TheMonitorLizard/JagTagXML**](https://github.com/TheMonitorLizard/JagTagXML) - a JagTag to XML transpiler written in Java
+Below are GutenTag-related libraries available for other languages or purposes:
+* [**pat/gutentag**](https://github.com/pat/gutentag) - A good, simple, solid tagging extension for ActiveRecord.
+* [**arrdem/guten-tag**](https://github.com/arrdem/guten-taarrdem/) - Good tags for a good day!
